@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Agenda Page";
+}
+
+<div id="fullcalendar"></div>
+<div id="modalEvent" class="modal" style="display: none;">
+    <div class="modal-header"><h3>Add new event</h3></div>
+    <div class="modal-body">
+        <form id="EventForm" class="well">
+            <input type="hidden" hidden id="eventID">
+            <label>Titulo</label>
+            <input type="text" id="eventTitle" placeholder="Escribe un titulo"><br />
+            <label>Fecha</label>
+            <input disabled type="text" id="eventDate"><br />
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="btnCancel" data-dismiss="modal" class="btn">Cancel</button>
+        <button type="button" id="btnSave" data-dismiss="modal" class="btn btn-primary">Guardar</button>
+    </div>
+</div> 
+
+@section Scripts {
+    <script type="text/javascript" src="~/Scripts/jquery-ui-1.8.11.min.js"></script>
+   <script type="text/javascript" src="~/Scripts/MyScript.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            calendario();
+        });
+    </script>
+
+}
