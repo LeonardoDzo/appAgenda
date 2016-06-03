@@ -1,2 +1,2 @@
 # appAgenda
-Agenda en AngularJs con C#
+Agenda con fullCalendar y C#
