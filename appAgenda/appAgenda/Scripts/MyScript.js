@@ -98,7 +98,8 @@ function Delete(ID, Name) {
                 contentType: "application/json",
                 data: JSON.stringify(dataRow)
                   
-                });      
+            });
+            $('#fullcalendar').empty();
             calendario();
             swal("Deleted!", "El cliente ha sido eliminado", "success");
         
